@@ -20,6 +20,8 @@ fmt.Println(arr1)
 会出现 `runtime error: slice bounds out of range` 原因是当切片组长度为5，不可添加多于5个元素
 
 若想完成1-10的升序排列，则应`arr1=make([]int, 10, 10)` ，同时`arr1[0:5]=T  T:=[]int{1, 2, 3, 4, 5}`
+
+此时`arr1=[1, 2, 3, 4, 5, 0, 0, 0, 0, 0]`，merge过程同下
 - ###  **若将测试程序改为：**
 ```
 arr1 := []int{1, 3, 5, 7, 9}
