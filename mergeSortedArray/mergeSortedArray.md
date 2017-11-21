@@ -1,4 +1,15 @@
-# mergeSortedArray的“bug”
+## mergeSortedArray解析
+
+Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
+
+Note:
+You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively.
+
+注意：实际上题意并不要求m, n分别等于两切片元素的个数。本题要求：
+- m,n 分别应小于各自切片中的实际元素个数
+- arr1的容量应足够>m+n
+
+## mergeSortedArray的“bug”
 - ###  **当测试程序为：**
 ```
 arr1 := []int{1, 3, 5, 7, 9}
