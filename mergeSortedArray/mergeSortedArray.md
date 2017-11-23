@@ -1,6 +1,5 @@
+# 合并两有序数组，同样按照升序/降序排列(这里是升序)
 ## mergeSortedArray解析
-
-**合并两有序数组，同样按照升序/降序排列（这里是升序）**
 
 Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
 
