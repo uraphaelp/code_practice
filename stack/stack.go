@@ -41,3 +41,21 @@ func (this *Stack) GetMin() int {
     }
     return min
 }
+
+func Traverse(pstack *Stack) {
+    if isempty(pstack) {
+            return
+    }
+    p:=pstack.Head
+    for ; p!=pstack.Bottom; p=p.Next {
+        fmt.Println("%d", p.Val)
+    }
+    fmt.Println()
+}
+
+func isempty(pstack *Stack) bool {
+    if pstack.Head==pstack.Bottom {
+            return true
+    }
+    return false
+}
