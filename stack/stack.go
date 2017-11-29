@@ -4,7 +4,7 @@ type ListNode struct {
     Next *ListNode
 }
 
-/定义栈：栈中的元素使用链表实现
+//定义栈：栈中的元素使用链表实现
 type Stack struct {
     Head, Bottom *ListNode
 }
