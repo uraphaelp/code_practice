@@ -20,3 +20,15 @@ func majorityElement(nums Slice) int {
     }
     return nums[l/2]
 }
+
+func majorityElementII(nums []int) int {
+    m := make(map[int]int)   //using map
+    l := len(nums)
+    for _, n := range nums { //n for nums[i] value
+        m[n]++               //m[n] for times of n apperence
+        if m[n] > l/2 {
+            return n
+        }
+    }
+    return 0
+}
