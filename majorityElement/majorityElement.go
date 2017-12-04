@@ -32,3 +32,21 @@ func majorityElementII(nums []int) int {
     }
     return 0
 }
+
+func majorityElementIII(nums []int) int {
+    var count, majority, i int
+    l:=len(nums)
+    majority=nums[0]
+    count=1
+    for i=1; i<l; i++ {
+        if count==0 {
+            majority=nums[i]
+            count++
+        } else if nums[i]==count {
+            count++
+        } else {
+            count--
+        }
+    }
+    return majority
+}
