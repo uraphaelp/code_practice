@@ -3,6 +3,7 @@ func Checkperfect(num int) bool {
 	if num==0 {
 		return false
 	}
+	//注意这个阈值条件的设置
 	for i:=1; i*i<=num; i++ {
 		if num%i==0 {
 			sum+=i
