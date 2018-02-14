@@ -1,3 +1,4 @@
+//求num的所有因子的和?=num
 func Checkperfect(num int) bool {
 	var sum int
 	if num==0 {
