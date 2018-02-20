@@ -3,7 +3,7 @@
 func Findmaxconsecutiveones(nums []int) int {
 var (
 		count, max int
-    //flag作为标记，若扫描到0，flag归零，否则置一
+    //flag作为标记，若扫描到0，flag归0，否则置1
 		flag=1
 	)
 	for i:=0; i<len(nums); i++ {
@@ -11,7 +11,7 @@ var (
 			count++
 		} else if nums[i]==1 && flag==0 {
 			count++
-      //flag需要重新置一
+      //flag需要重新置1
 			flag=1
 		} else {
 			flag=0
